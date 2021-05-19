@@ -169,6 +169,12 @@ begin
   TCarros.Inserir('Palio', Now);
   TCarros.Inserir('Gol', Now);
   TCarros.Inserir('Vectra', Now);
+
+  TVendas.Inserir(TCliente.Buscar(1), TCarro.Buscar(5));
+  TVendas.Inserir(TCliente.Buscar(2), TCarro.Buscar(4));
+  TVendas.Inserir(TCliente.Buscar(3), TCarro.Buscar(3));
+  TVendas.Inserir(TCliente.Buscar(4), TCarro.Buscar(2));
+  TVendas.Inserir(TCliente.Buscar(5), TCarro.Buscar(1));
 end;
 
 end.
